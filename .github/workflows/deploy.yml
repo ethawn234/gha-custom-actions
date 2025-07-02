@@ -50,7 +50,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
       - name: Get & Cache dependencies
-        uses: ./github/actions/cache-dependencies
+        uses: ./.github/actions/cache-dependencies
       - name: Build website
         run: npm run build
       - name: Upload artifacts
